@@ -1,0 +1,84 @@
+:root {
+    --white: #fff;
+    --offWhite: #f1f1f1;
+    --gray: #6a6a6a;
+    --darkRed: #b12029;
+}
+
+/* nav section */
+.quickLinks {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    height: 5vh;
+    background-color: #212121;
+}
+
+.phone {
+    display: flex;
+    justify-content: space-around;
+}
+
+ion-icon {
+    color: var(--darkRed);
+}
+
+.PhoneNumber {
+    padding-left: 10px;
+    color: var(--white);
+    font-size: 13px;
+}
+
+.ulLinks {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.liLinks {
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+.aLinks {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 12px;
+}
+
+.travelLogo {
+    padding: 0;
+    margin: 0;
+}
+
+.logo {
+    color: var(--darkRed);
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    position: relative;
+}
+
+.topnav a.icon {
+    display: none;
+}
+
+.topnav a {
+    text-decoration: none;
+    padding: 10px;
+    justify-content: space-between;
+    color: var(--white);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topnav a:hover {
+    color: var(--darkRed);
+    background-color: var(--white);
+    border-radius: 5%;
+    padding: 10px;
+}

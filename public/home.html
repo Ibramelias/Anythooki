@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- logo font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel&family=Holtwood+One+SC&family=Playfair+Display+SC:wght@700&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Travelista</title>
+</head>
+
+<body>
+    <section class="quickLinks">
+        <div class="phone">
+            <ion-icon name="call-outline"></ion-icon>
+            <p class="PhoneNumber">1.888.666.9999</p>
+        </div>
+        <div class="links">
+            <ul class="ulLinks">
+                <li class="liLinks"><a class='aLinks' href="">Webcams</a></li>
+                <li class="liLinks"><a class='aLinks' href="">Visitor Guide</a></li>
+                <li class="liLinks"><a class='aLinks' href="">Blog</a></li>
+                <li class="liLinks"><a class='aLinks' href="">Weather</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="ads">
+        <nav>
+            <div class="travelLogo">
+                <p class="logo">Travelista</p>
+            </div>
+            <div class="topnav" id="myTopnav">
+                <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#">Discover</a>
+                <a href="#">Lodging</a>
+                <a href="#">Things to Do</a>
+                <a href="#">Food & Drink</a>
+                <a href="#">Festivals & Events</a>
+                <a href="#">Plan Your Visit</a>
+            </div>
+        </nav>
+        <div class="container ad_title">
+            <p class="lines">///////</p>
+            <p class="ad_slogan">SPRING SPLENDOR</p>
+            <button type="button" class="btn btn-light snow-btn">Snow & Sunshine Perfection</button>
+        </div>
+    </section>
+
+    <section class="container booking booking-full-tab">
+        <div class="wrapper tab-wrapper">
+            <ul class="btn-section">
+                <li class="js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Lodging</a>
+                </li>
+                <li class="js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Flights</a>
+                </li>
+                <li class="js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Offers & Packages</a>
+                </li>
+                <li class="js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Shuttels</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-panel">
+                    <form action="get">
+                        <fieldset>
+                            <label class="date" title="'arrival date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="date" attr="date" class="date" name="ArrivalDate" placeholder="Arrival"
+                                    required>
+                            </label>
+                            <label class="date" title="'Departure date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="date" class="date" name="DepartureDate" placeholder="Departure" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label class="select" title="Adults">
+                                <div>
+                                    <select name="adultcount" id="adultcount" required>
+                                        <option value="1" selected>1 Adult</option>
+                                        <option value="2">2 Adult</option>
+                                        <option value="3">3 Adult</option>
+                                        <option value="4">4 Adult</option>
+                                        <option value="5">5 Adult</option>
+                                        <option value="6">6 Adult</option>
+                                        <option value="7">7 Adult</option>
+                                        <option value="8">8 Adult</option>
+                                        <option value="9">9 Adult</option>
+                                        <option value="10">10 Adult</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <label class="select" title="children">
+                                <div>
+                                    <select name="childrencount" id="childrencount" required>
+                                        <option value="1" selected>0 Children</option>
+                                        <option value="1">1 Children</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                        <option value="4">4 Children</option>
+                                        <option value="5">5 Children</option>
+                                        <option value="6">6 Children</option>
+                                        <option value="7">7 Children</option>
+                                        <option value="8">8 Children</option>
+                                        <option value="9">9 Children</option>
+                                        <option value="10">10 Children</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn-lodging">Find Lodging</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container promo-grid">
+        <div class="row promo-grid-section">
+            <div class="col-6 ">
+                <div class="promo-one">
+                    <img class="promo-img"
+                        src="https://www.telluride.com/site/assets/files/42780/telluride_2022_calendar.450x304.webp"
+                        alt="">
+                    <div class="promo-one-title">
+                        <h1>2022 TELLURIDE CALENDER</h1>
+                        <div class="promo-expl">
+                            <p class="promo-line">A picture is worth a thousand words!</p>
+                            <p class="promo-btn-one">→ Purchase Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="promo-two">
+                    <img class="promo-img"
+                        src="https://www.telluride.com/site/assets/files/37549/visitor_guide.450x304.webp" alt="">
+                    <div class="promo-one-title">
+                        <h1>2022 TELLURIDE CALENDER</h1>
+                        <div class="promo-expl">
+                            <p class="promo-btn-one">→ Learn More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ski-section">
+        <div class="row">
+            <div class="col-7">
+                <img class="ski-img"
+                    src="https://www.telluride.com/site/assets/files/42791/telluride_skiing-ps-size-width-opt.1400x1089.webp"
+                    alt="resort-image">
+                <img class="ski-sec-img"
+                    src="https://www.telluride.com/site/assets/files/42791/telluride_ski_resort.500x633.webp" alt="">
+            </div>
+            <div class="col-5 ski-info">
+                <p class="lines">//////</p>
+                <h2 class="resort-title">North<br> America #1 <br>Ski Resort</h2>
+                <p class="ski-topic">The countdown to ski season is on! Experience<br> powder-filled days, and wide-open
+                    slopes with views<br> for
+                    miles this winter.</p>
+                <button class="ski-btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container upcoming-blog">
+        <div class="row events-section">
+            <div class="upcoming-blog-title">
+                <h3>Upcoming Events</h3>
+                <h3>The Blog</h3>
+            </div>
+            <div class="col-3">
+                <img class="upcoming-events"
+                    src="https://www.telluride.com/site/assets/files/44188/soul_brass_band_nola.800x533.webp" alt="">
+                <div class="event-date">Apr 3, 2022</div>
+                <div class="event-info">Soul Brass Band live at Transfer warehouse!</div>
+                <div class="see-allevents">→ See all Events</div>
+            </div>
+            <div class="col-3">
+                <img class="upcoming-events"
+                    src="https://www.telluride.com/site/assets/files/44188/soul_brass_band_nola.800x533.webp" alt="">
+                <div class="event-date">Apr 30, 2022</div>
+                <div class="event-info">Soul Brass Band live at Transfer warehouse!</div>
+            </div>
+            <div class="col-3">
+                <img class="upcoming-events"
+                    src="https://www.telluride.com/site/assets/files/44154/dsc06270lr-1.800x533.webp" alt="">
+                <div class="event-date">Blog</div>
+                <div class="event-info">What's Happening This Week in Tellurid & Mountain Village </div>
+                <div class="see-allevents">→ See all Blogs</div>
+            </div>
+            <div class="col-3">
+                <img class="upcoming-events"
+                    src="https://www.telluride.com/site/assets/files/37419/i-wtghwc8-x4.800x533.webp" alt="">
+                <div class="event-date">Blog</div>
+                <div class="event-info">Tell-U-Right</div>
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section class="container another-activity">
+        <div class="row">
+            <div class="col-4">
+                <div class="activity-one">
+                    <a class="actitvity-title" href="">
+                        <div class="activity-info">
+                            <p class="offer-title">FIND YOUR PLACE</p>
+                            <p>Browse all lodging listings</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="activity-two">
+                    <a class="actitvity-title" href="">
+                        <div class="activity-info">
+                            <p class="offer-title">Winter Activities</p>
+                            <p>Explore all that Travelista has to offer</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="activity-three">
+                    <a class="actitvity-title" href="">
+                        <div class="activity-info">
+                            <p class="offer-title">Plan your visit</p>
+                            <p>Everything you need to know</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script src="assets/Js/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</html>
