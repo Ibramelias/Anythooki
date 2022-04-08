@@ -82,3 +82,80 @@ nav {
     border-radius: 5%;
     padding: 10px;
 }
+
+
+@media screen and (max-width: 992px) {
+    nav {
+        background-color: var(--white);
+        height: 10vh;
+        justify-content: space-between;
+        padding: 25px;
+    }
+
+
+    .topnavresponsive {
+        margin-top: 5%;
+        height: 30vh;
+        width: 100%;
+        background-color: var(--white);
+        display: grid;
+        text-align: center;
+    }
+
+    .topnavresponsive a {
+        color: var(--darkRed);
+        text-decoration: none;
+    }
+
+    .topnavresponsive .icon {
+        top: 0;
+        right: 0;
+    }
+
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        color: var(--darkRed);
+        float: right;
+        display: block;
+    }
+
+    .ad_title {
+        margin-top: 50%;
+    }
+
+    .ad_slogan {
+        font-size: 45px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .topnav .responsive {
+        position: relative
+    }
+
+    .topnav .responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    a.icon {
+        color: #212121;
+        /* padding: 0; */
+    }
+
+    .topnav .responsive a {
+        /* float: none;
+        display: block; */
+        text-align: center;
+
+    }
+
+    .ski-sec-img {
+        height: auto;
+    }
+}
