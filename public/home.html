@@ -65,18 +65,18 @@
     <section class="container booking booking-full-tab">
         <div class="wrapper tab-wrapper">
             <ul class=" row btn-section">
-                <div class="col-3 js-tabList__item tabs__item">
-                    <a class="js__tabLink tab__link">Lodging</a>
-                </div>
-                <div class="col-3 js-tabList__item tabs__item">
-                    <a class="js__tabLink tab__link">Flights</a>
-                </div>
-                <div class="col-3 js-tabList__item tabs__item">
-                    <a class="js__tabLink tab__link">Offers & Packages</a>
-                </div>
-                <div class="col-3 js-tabList__item tabs__item">
-                    <a class="js__tabLink tab__link">Shuttels</a>
-                </div>
+                <li class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link" aria-selected="false" aria-controls="">Lodging</a>
+                </li>
+                <li class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link" aria-selected="ture">Flights</a>
+                </li>
+                <li class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link" aria-selected="false">Offers & Packages</a>
+                </li>
+                <li class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link" aria-selected="false">Shuttels</a>
+                </li>
             </ul>
             <div class="tab-content">
                 <div class="tab-panel lodging">
@@ -552,13 +552,17 @@
             <div class="row footer-row">
                 <div class="col-3 footer-section">
                     <ul class="footer-links">
-                        <li class="footer-titles">toll Free 1.888.666.9999</li>
+                        <div class="footer-phone">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <li class="footer-toll-number">toll Free 1.888.666.9999</li>
+                        </div>
                         <li>
-                            <p>Stay in the know. Get the latest news, updates and offers from Telluride.</p>
+                            <p class="footer-paragraph">Stay in the know. Get the latest news, updates and offers from
+                                Telluride.</p>
                         </li>
-                        <li><input type="text"></li>
-                        <li><input type="text"></li>
-                        <li><button type="submit">Submit</button></li>
+                        <li><input class="footer-input-one" type="text"></li>
+                        <li><input class="footer-input-two" type="text" placeholder="Country"></li>
+                        <li><button class="footer-submit-btn" type="submit">Submit</button></li>
                     </ul>
                 </div>
                 <div class="col-3 footer-section">
@@ -596,6 +600,45 @@
                         <li><a class="quick-links" href="#">How to Book</a></li>
                         <li><a class="quick-links" href="#">Visit Us</a></li>
                     </ul>
+                </div>
+            </div>
+            <div class="row footer.rowTwo">
+                <div class="col-4 social-media-links">
+                    <ul class="social-media-icons">
+                        <li>
+                            <ion-icon class="icon" name="logo-facebook"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="logo-twitter"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="logo-instagram"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon class="icon" name="logo-pinterest"></ion-icon>
+                        </li>
+                    </ul>
+                    <div class="container made-in">
+                        <p>Made In Travlista</p>
+                        <p>2022 Travlista Tourism Board</p>
+                        <p class="privacy">Privacy Policy</p>
+                    </div>
+                </div>
+                <div class="col-4 footer-guide">
+                    <p class="footer-guide-ad">
+                        <img class="footer-guide-img"
+                            src="https://www.telluride.com/site/assets/files/37549/visitor_guide.450x304.webp"
+                            width="30%" alt="">
+                        Get the official Treavilista Mountain Village Visitor Guide
+                    </p>
+                </div>
+                <div class="col-4 footer-guide">
+                    <p class="footer-guide-ad">
+                        <img class="footer-guide-img"
+                            src="https://www.telluride.com/site/assets/files/37551/dsc01899_rb.450x304.webp" width="30%"
+                            alt="">
+                        Get the official Treavilista Mountain Village Visitor Guide
+                    </p>
                 </div>
             </div>
         </div>

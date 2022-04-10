@@ -275,6 +275,56 @@ footer {
     background-color: #212121;
 }
 
+.footer-toll-number {
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.footer-paragraph {
+    color: var(--white);
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.footer-phone {
+    display: flex;
+}
+
+.footer-input-one {
+    width: 90%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.footer-input-two {
+    width: 90%;
+    height: 35px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.footer-submit-btn {
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    color: var(--white);
+    background-color: var(--darkRed);
+}
+
+.footer-submit-btn:hover {
+    color: var(--darkRed);
+    background-color: var(--white);
+}
+
+
 .booking-full-tab-footer {
     background-color: var(--offWhite);
     padding-bottom: 25px;
@@ -308,4 +358,40 @@ footer {
 
 a:hover {
     color: var(--white);
+}
+
+.social-media-icons {
+    display: flex;
+    list-style: none;
+    margin-top: 10%;
+}
+
+.icon {
+    color: var(--white);
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.made-in {
+    color: rgb(80, 79, 79);
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.footer-guide {
+    margin-top: 5%;
+    color: var(--white);
+}
+
+.footer-guide-ad {
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+.footer-guide-img {
+    margin-right: 10px;
+    border-radius: 2px;
 }
