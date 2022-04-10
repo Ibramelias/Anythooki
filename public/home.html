@@ -367,6 +367,240 @@
         </div>
     </section>
 
+    <div class="container booking booking-full-tab-footer">
+        <div class="wrapper tab-wrapper">
+            <ul class=" row btn-section">
+                <div class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Lodging</a>
+                </div>
+                <div class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Flights</a>
+                </div>
+                <div class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Offers & Packages</a>
+                </div>
+                <div class="col-3 js-tabList__item tabs__item">
+                    <a class="js__tabLink tab__link">Shuttels</a>
+                </div>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-panel lodging">
+                    <form action="get">
+                        <fieldset>
+                            <label class="date" title="'arrival date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="type" attr="date" class="date" name="ArrivalDate" placeholder="Arrival"
+                                    required>
+                            </label>
+                            <label class="date" title="'Departure date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="type" class="date" name="DepartureDate" placeholder="Departure" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label class="select" title="Adults">
+                                <div>
+                                    <select name="adultcount" id="adultcount" required>
+                                        <option value="1" selected>1 Adult</option>
+                                        <option value="2">2 Adult</option>
+                                        <option value="3">3 Adult</option>
+                                        <option value="4">4 Adult</option>
+                                        <option value="5">5 Adult</option>
+                                        <option value="6">6 Adult</option>
+                                        <option value="7">7 Adult</option>
+                                        <option value="8">8 Adult</option>
+                                        <option value="9">9 Adult</option>
+                                        <option value="10">10 Adult</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <label class="select" title="children">
+                                <div>
+                                    <select name="childrencount" id="childrencount" required>
+                                        <option value="1" selected>0 Children</option>
+                                        <option value="1">1 Children</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                        <option value="4">4 Children</option>
+                                        <option value="5">5 Children</option>
+                                        <option value="6">6 Children</option>
+                                        <option value="7">7 Children</option>
+                                        <option value="8">8 Children</option>
+                                        <option value="9">9 Children</option>
+                                        <option value="10">10 Children</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn-lodging">Find Lodging</button>
+                    </form>
+                </div>
+                <div class="tab-panel flight">
+                    <form action="get">
+                        <fieldset>
+                            <label class="date" title="'arrival date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="type" attr="date" class="date" name="ArrivalDate" placeholder="Arrival"
+                                    required>
+                            </label>
+                            <label class="date" title="'Departure date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="type" class="date" name="DepartureDate" placeholder="Departure" required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label class="select" title="Adults">
+                                <div>
+                                    <input type="text" placeholder="Departure City Airport Code">
+                                </div>
+                            </label>
+                            <label class="select" title="children">
+                                <div>
+                                    <select name="airport" id="airport" required>
+                                        <option value="1" selected>Select One</option>
+                                        <option value="1">MTJ</option>
+                                        <option value="2">TEX</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn-lodging">Find Flights</button>
+                    </form>
+                </div>
+                <div class="tab-panel offers">
+                    <form action="get">
+                        <fieldset>
+                            <label class="date" title="'arrival date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="type" attr="date" class="date" name="ArrivalDate"
+                                    placeholder="Arrival Date" required>
+                            </label>
+                            <label class="date" title="'Departure date">
+                                <span>
+                                    <ion-icon name="calendar-outline"></ion-icon>
+                                </span>
+                                <input type="type" class="date" name="DepartureDate" placeholder="Departure Date"
+                                    required>
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label class="select" title="Adults">
+                                <div>
+                                    <select name="adultcount" id="adultcount" required>
+                                        <option value="1" selected>1 Adult</option>
+                                        <option value="2">2 Adult</option>
+                                        <option value="3">3 Adult</option>
+                                        <option value="4">4 Adult</option>
+                                        <option value="5">5 Adult</option>
+                                        <option value="6">6 Adult</option>
+                                        <option value="7">7 Adult</option>
+                                        <option value="8">8 Adult</option>
+                                        <option value="9">9 Adult</option>
+                                        <option value="10">10 Adult</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <label class="select" title="children">
+                                <div>
+                                    <select name="childrencount" id="childrencount" required>
+                                        <option value="1" selected>0 Children</option>
+                                        <option value="1">1 Children</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                        <option value="4">4 Children</option>
+                                        <option value="5">5 Children</option>
+                                        <option value="6">6 Children</option>
+                                        <option value="7">7 Children</option>
+                                        <option value="8">8 Children</option>
+                                        <option value="9">9 Children</option>
+                                        <option value="10">10 Children</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </fieldset>
+                        <button class="btn btn-lodging">Find offers</button>
+                    </form>
+                </div>
+                <div class="tab-panel shuttles">
+                    <form action="get">
+                        <label class="date" title="'shuttle date">
+                            <span>
+                                <ion-icon name="calendar-outline"></ion-icon>
+                            </span>
+                            <input type="type" attr="date" class="date" name="ShuttleDate" placeholder="Shuttle Date"
+                                required>
+                        </label>
+                        <button class="btn btn-lodging">Find Shuttle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container all-footer">
+            <div class="row footer-row">
+                <div class="col-3 footer-section">
+                    <ul class="footer-links">
+                        <li class="footer-titles">toll Free 1.888.666.9999</li>
+                        <li>
+                            <p>Stay in the know. Get the latest news, updates and offers from Telluride.</p>
+                        </li>
+                        <li><input type="text"></li>
+                        <li><input type="text"></li>
+                        <li><button type="submit">Submit</button></li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-section">
+                    <ul class="footer-links">
+                        <p class="footer-titles">Discover</p>
+                        <li><a class="quick-links" href="#">In Winter</a></li>
+                        <li><a class="quick-links" href="#">In Summer</a></li>
+                        <li><a class="quick-links" href="#">For Families</a></li>
+                        <li><a class="quick-links" href="#">The Destination</a></li>
+                        <li><a class="quick-links" href="#">Dining</a></li>
+                        <li><a class="quick-links" href="#">Lodging</a></li>
+                        <li><a class="quick-links" href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-section">
+                    <ul class="footer-links">
+                        <p class="footer-titles">Plan Your Visit</p>
+                        <li><a class="quick-links" href="#">Webcams</a></li>
+                        <li><a class="quick-links" href="#">Weather</a></li>
+                        <li><a class="quick-links" href="#">Maps</a></li>
+                        <li><a class="quick-links" href="#">Getting Here</a></li>
+                        <li><a class="quick-links" href="#">Offical Visitors Guide</a></li>
+                        <li><a class="quick-links" href="#">Groups & Meeting</a></li>
+                        <li><a class="quick-links" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-section">
+                    <ul class="footer-links">
+                        <p class="footer-titles">Useful Links</p>
+                        <li><a class="quick-links" href="#">Visitors Center</a></li>
+                        <li><a class="quick-links" href="#">Media</a></li>
+                        <li><a class="quick-links" href="#">Sustainability</a></li>
+                        <li><a class="quick-links" href="#">Business Directory</a></li>
+                        <li><a class="quick-links" href="#">What's Next</a></li>
+                        <li><a class="quick-links" href="#">How to Book</a></li>
+                        <li><a class="quick-links" href="#">Visit Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 <script src="assets/Js/home.js"></script>

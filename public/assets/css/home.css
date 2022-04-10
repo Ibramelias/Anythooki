@@ -31,13 +31,17 @@
 /* booking full tab */
 .booking-full-tab {
     background-color: var(--offWhite);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 25px;
+    margin-top: -20px;
+    z-index: 2;
+    position: relative;
+    border-radius: 5px;
 }
 
 .btn-section {
     list-style: none;
     border-radius: 5px;
+    padding: inherit;
 }
 
 .js-tabList__item {
@@ -92,6 +96,10 @@ input {
     border-radius: 3px;
     padding: 3px;
     font-size: 13px;
+}
+
+.promo-grid {
+    margin-top: 5%;
 }
 
 .promo-grid-section {
@@ -176,7 +184,7 @@ h1 {
     position: absolute;
     width: 15%;
     left: 40%;
-    bottom: -110%;
+    bottom: -105%;
     height: 30%;
 }
 
@@ -257,4 +265,47 @@ h1 {
     background-image: url("https://www.telluride.com/site/assets/files/36793/telluride_air.1200x1209.webp");
     background-size: cover;
     height: 40vh;
+}
+
+
+
+footer {
+    margin-top: 10%;
+    height: 70vh;
+    background-color: #212121;
+}
+
+.booking-full-tab-footer {
+    background-color: var(--offWhite);
+    padding-bottom: 25px;
+    margin-bottom: -230px;
+    z-index: 2;
+    position: relative;
+    border-radius: 5px;
+}
+
+.footer-row {
+    padding-top: 13%;
+}
+
+.footer-titles {
+    color: var(--darkRed);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: grid;
+    width: auto;
+    list-style: none;
+}
+
+.quick-links {
+    color: var(--white);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--white);
 }
