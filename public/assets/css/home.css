@@ -184,7 +184,7 @@ h1 {
     position: absolute;
     width: 15%;
     left: 40%;
-    bottom: -105%;
+    bottom: -110%;
     height: 30%;
 }
 
@@ -394,4 +394,104 @@ a:hover {
 .footer-guide-img {
     margin-right: 10px;
     border-radius: 2px;
+}
+
+@media screen and (max-width: 1200px) {
+    .ski-sec-img {
+        bottom: -90%;
+        height: 25%;
+    }
+
+    .booking-full-tab {
+        margin-top: -50px;
+    }
+
+    .booking-full-tab-footer {
+        margin-bottom: -200px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .booking-full-tab-footer {
+        margin-bottom: -165px;
+    }
+
+    .promo-one-title {
+        padding-top: 10px;
+    }
+
+    .promo-title {
+        font-size: 15px
+    }
+
+    .promo-img {
+        width: 30%;
+    }
+
+    .promo-line {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .promo-grid-section {
+        display: inline;
+    }
+
+    .ski-img {
+        height: 70%;
+        margin-top: 13%;
+    }
+
+
+    .promo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .tab__link {
+        font-size: 13px;
+    }
+
+    fieldset {
+        display: grid;
+    }
+
+    .btn-lodging {
+        height: fit-content;
+        margin-top: 15px;
+    }
+
+    .booking-full-tab {
+        padding-bottom: 0;
+    }
+
+    input {
+        margin-bottom: 10px;
+    }
+
+    .resort-title {
+        font-size: 30px;
+    }
+
+    .ski-info {
+        padding-top: 50px;
+    }
+
+    .ski-topic {
+        font-size: 13px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .offer-title {
+        font-size: 20px;
+    }
+
+    .activity-info {
+        padding-top: 100%;
+    }
 }

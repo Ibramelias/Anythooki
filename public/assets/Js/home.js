@@ -7,6 +7,3 @@ function responsiveNav() {
         x.className = 'topnav'
     }
 }
-
-var bookingBtn = (this)
-console.log(bookingBtn)
