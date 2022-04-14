@@ -32,10 +32,13 @@
 .booking-full-tab {
     background-color: var(--offWhite);
     padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
     margin-top: -20px;
     z-index: 2;
     position: relative;
     border-radius: 5px;
+    width: 90%;
 }
 
 .btn-section {
@@ -44,23 +47,6 @@
     padding: inherit;
 }
 
-.js-tabList__item {
-    height: 50px;
-    background-color: #212121;
-    text-align: center;
-    padding: 10px;
-}
-
-
-.tab__link {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.tab__link:hover {
-    color: var(--darkRed);
-    cursor: pointer;
-}
 
 form {
     display: flex;
@@ -78,17 +64,34 @@ input {
     color: gray;
 }
 
-.flight {
-    display: none;
+.nav-tabs {
+    /* width: 1%; */
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: none;
+    margin-bottom: 20px;
+    background-color: #212121;
+    color: var(--white);
+
 }
 
-.offers {
-    display: none;
+.nav-link {
+    color: var(--white);
+    border: 0;
 }
 
-.shuttles {
-    display: none;
+.nav-link:hover {
+    color: var(--darkRed);
+    border: none;
 }
+
+.nav-tabs .nav-link.active {
+    background-color: var(--darkRed);
+    color: var(--white);
+    border: none;
+}
+
 
 .btn-lodging {
     background-color: transparent;
@@ -328,6 +331,8 @@ footer {
 .booking-full-tab-footer {
     background-color: var(--offWhite);
     padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: -230px;
     z-index: 2;
     position: relative;
