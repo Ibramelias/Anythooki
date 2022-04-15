@@ -39,7 +39,7 @@
     </div>
 
     <header class="ads">
-        <nav>
+        <nav class="navbar">
             <div class="travelLogo">
                 <p class="logo">Travelista</p>
             </div>
@@ -264,20 +264,25 @@
         <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="lodging" role="tabpanel" aria-labelledby="lodging-tab">
                 <div class="tab-panel lodging">
-                    <form action="get">
+                    <form>
                         <fieldset>
+                            <label class="date" title="'arrival date">
+
+                                <input type="text" class="city" placeholder='City' required>
+                            </label>
                             <label class="date" title="'arrival date">
                                 <span>
                                     <ion-icon name="calendar-outline"></ion-icon>
                                 </span>
-                                <input type="type" attr="date" class="date" name="ArrivalDate" placeholder="Arrival"
-                                    required>
+                                <input type="date" attr="date" class="arrival-date" name="ArrivalDate"
+                                    placeholder="Arrival" required>
                             </label>
                             <label class="date" title="'Departure date">
                                 <span>
                                     <ion-icon name="calendar-outline"></ion-icon>
                                 </span>
-                                <input type="type" class="date" name="DepartureDate" placeholder="Departure" required>
+                                <input type="date" class="departure-date" name="DepartureDate" placeholder="Departure"
+                                    required>
                             </label>
                         </fieldset>
                         <fieldset>
@@ -315,7 +320,7 @@
                                 </div>
                             </label>
                         </fieldset>
-                        <button class="btn btn-lodging">Find Lodging</button>
+                        <button id='lodging-btn' class="btn btn-lodging">Find Lodging</button>
                     </form>
                 </div>
             </div>
@@ -327,14 +332,14 @@
                                 <span>
                                     <ion-icon name="calendar-outline"></ion-icon>
                                 </span>
-                                <input type="type" attr="date" class="date" name="ArrivalDate" placeholder="Arrival"
+                                <input type="date" attr="date" class="date" name="ArrivalDate" placeholder="Arrival"
                                     required>
                             </label>
                             <label class="date" title="'Departure date">
                                 <span>
                                     <ion-icon name="calendar-outline"></ion-icon>
                                 </span>
-                                <input type="type" class="date" name="DepartureDate" placeholder="Departure" required>
+                                <input type="date" class="date" name="DepartureDate" placeholder="Departure" required>
                             </label>
                         </fieldset>
                         <fieldset>
@@ -1029,6 +1034,8 @@
 
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 <script src="assets/Js/home.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -1042,6 +1049,7 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 
 </html>

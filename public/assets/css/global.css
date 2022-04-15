@@ -55,15 +55,28 @@ ion-icon {
     color: var(--darkRed);
     font-family: 'Righteous', cursive;
     font-size: 30px;
+    margin-top: -12px;
 }
 
-nav {
+.navbar {
     display: flex;
     justify-content: space-around;
     padding: 50px;
     position: sticky;
+    z-index: 10;
     top: 0;
 }
+
+.navbar.solid {
+    background-color: var(--white);
+    padding-bottom: 30px;
+}
+
+.topnav.solid2 a {
+    color: #212121;
+}
+
+
 
 .topnav a.icon {
     display: none;

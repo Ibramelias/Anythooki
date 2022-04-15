@@ -53,9 +53,9 @@ form {
     justify-content: space-around;
 }
 
-fieldset {
+/* fieldset {
     display: contents;
-}
+} */
 
 
 input {
@@ -91,6 +91,8 @@ input {
     color: var(--white);
     border: none;
 }
+
+
 
 
 .btn-lodging {
