@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     $('#lodging-btn').on("click", function (e) {
         e.preventDefault()
-        window.open('http://127.0.0.1:5500/public/about.html')
+        window.open('res.html')
         var cityName = $('.city').val();
         var arrivalDate = $('.arrival-date').val();
         var departureDate = $('.departure-date').val();
