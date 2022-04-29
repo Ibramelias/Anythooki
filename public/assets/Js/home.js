@@ -26,27 +26,36 @@ $(document).ready(function () {
 
     $('#lodging-btn').on("click", function (e) {
         e.preventDefault()
+        window.open('http://127.0.0.1:5500/public/about.html')
         var cityName = $('.city').val();
         var arrivalDate = $('.arrival-date').val();
         var departureDate = $('.departure-date').val();
+        var adultCount = $('#adultcount').val()
+        var roomCount = $('#roomcount').val()
+        console.log(cityName)
         console.log(arrivalDate)
+        console.log(departureDate)
+        console.log(adultCount)
+        console.log(roomCount)
 
 
 
-        const settings = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://skyscanner44.p.rapidapi.com/search-hotel?locationId=95673383&adults=1&rooms=1&checkin=" + arrivalDate + "&checkout=" + departureDate + "&currency=EUR",
-            "method": "GET",
-            "headers": {
-                "X-RapidAPI-Host": "skyscanner44.p.rapidapi.com",
-                "X-RapidAPI-Key": "d900d6eecdmsh4d24d7bb04a0f4dp1badabjsnad948b39d7fe"
-            }
-        };
 
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-        });
+
+        // const settings = {
+        //     "async": true,
+        //     "crossDomain": true,
+        //     "url": "https://skyscanner44.p.rapidapi.com/search-hotel?locationId=95673383&adults=" + adultCount + "&rooms=" + roomCount + "&checkin=" + arrivalDate + "&checkout=" + departureDate + "&currency=USD",
+        //     "method": "GET",
+        //     "headers": {
+        //         "X-RapidAPI-Host": "skyscanner44.p.rapidapi.com",
+        //         "X-RapidAPI-Key": "d900d6eecdmsh4d24d7bb04a0f4dp1badabjsnad948b39d7fe"
+        //     }
+        // };
+
+        // $.ajax(settings).done(function (response) {
+        //     console.log(response);
+        // });
 
     })
 

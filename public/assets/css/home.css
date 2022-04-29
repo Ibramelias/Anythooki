@@ -1,10 +1,12 @@
 /*  */
+
+
 .ads {
-    background-image: url('https://www.telluride.com/site/assets/files/44107/dsc07395lr_2.2400x1200.webp');
+    background-image: url('https://www.telluride.com/site/assets/files/44230/i-wwjhcbb-x4.2400x1200.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 85vh;
 }
 
 .ad_title {
@@ -58,12 +60,6 @@ form {
 } */
 
 
-input {
-    border: 2px solid gray;
-    border-radius: 3px;
-    color: gray;
-}
-
 .nav-tabs {
     /* width: 1%; */
     padding-right: 10px;
@@ -92,15 +88,88 @@ input {
     border: none;
 }
 
-
-
-
 .btn-lodging {
     background-color: transparent;
     border: 2px solid var(--darkRed);
     border-radius: 3px;
     padding: 3px;
     font-size: 13px;
+}
+
+.date {
+    width: 100%;
+    height: 100%
+}
+
+.flight-date {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.input-date {
+    height: 90%;
+    width: 80%;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.count-label {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+}
+
+.flight-count {
+    width: 30%;
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.airport-code {
+    width: 115%;
+    font-size: 15px;
+}
+
+.offer-date {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.count {
+    height: 100%;
+}
+
+.lodging-date {
+    width: 40%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.count-section {
+    width: 20%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.shuttle-date {
+    width: 80%;
+    height: 40px;
+
+}
+
+.shuttle-input-date {
+    width: 100%;
+    height: 90%;
 }
 
 .promo-grid {
@@ -189,7 +258,7 @@ h1 {
     position: absolute;
     width: 15%;
     left: 40%;
-    bottom: -110%;
+    bottom: -100%;
     height: 30%;
 }
 
