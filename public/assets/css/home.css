@@ -49,6 +49,18 @@
     padding: inherit;
 }
 
+.nav-item {
+    width: 25%;
+}
+
+.nav-link {
+    width: 100%;
+    text-align: center;
+}
+
+/* .nav-item:active {
+    padding-top: 2px;
+} */
 
 form {
     display: flex;
@@ -61,8 +73,6 @@ form {
 
 
 .nav-tabs {
-    /* width: 1%; */
-    padding-right: 10px;
     display: flex;
     justify-content: space-around;
     border-bottom: none;
@@ -86,6 +96,8 @@ form {
     background-color: var(--darkRed);
     color: var(--white);
     border: none;
+    margin-top: -8px;
+    padding-bottom: 17px;
 }
 
 .btn-lodging {
@@ -98,7 +110,8 @@ form {
 
 .date {
     width: 100%;
-    height: 100%
+    height: 100%;
+    margin-left: 10px;
 }
 
 .flight-date {
@@ -111,7 +124,7 @@ form {
 
 .input-date {
     height: 90%;
-    width: 80%;
+    width: 100%;
     font-size: 15px;
     text-align: center;
 }
@@ -149,16 +162,25 @@ form {
 
 .lodging-date {
     width: 40%;
-    height: 40px;
+    height: 45px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .count-section {
-    width: 20%;
+    width: 40%;
     height: 40px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.adult-selection {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.select {
+    width: 100%;
 }
 
 .shuttle-date {

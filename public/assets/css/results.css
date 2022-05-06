@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.9), rgba(125, 75, 75, 0.2)), url('https://static.onecms.io/wp-content/uploads/sites/28/2021/02/19/new-york-city-evening-NYCTG0221.jpg');
+    background-position: 10% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
